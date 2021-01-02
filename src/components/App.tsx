@@ -1,9 +1,15 @@
 import { FunctionalComponent, h } from "preact";
+import { Footer } from "./Footer/Footer";
+import { Header } from "./Header/Header";
 
 export const App: FunctionalComponent = () => {
   return (
-    <div>
-      <h1>Hello, world!</h1>
+    <div className="app">
+      <Header />
+      <main>
+        <p>Content</p>
+      </main>
+      <Footer />
     </div>
   );
 };

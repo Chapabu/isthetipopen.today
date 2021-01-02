@@ -12,6 +12,11 @@ body {
   -moz-osx-font-smoothing: grayscale;
 }
 
-* {
-  box-sizing: border-box;
+.app {
+  min-height: 100vh;
+  max-width: 65rem;
+  margin: 0 auto;
+  padding: 0 1rem;
+  display: grid;
+  grid-template-rows: auto 1fr auto;
 }
