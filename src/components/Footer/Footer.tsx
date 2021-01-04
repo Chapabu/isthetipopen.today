@@ -1,5 +1,4 @@
 import { FunctionalComponent, h } from 'preact';
-import { Disclaimer } from '../Disclaimer/Disclaimer';
 
 export const Footer: FunctionalComponent = () => {
   return (
