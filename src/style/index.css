@@ -22,8 +22,8 @@ body {
 .center {
   display: flex;
   flex-direction: column;
-  place-items: center;
-  place-content: center;
+  align-items: center;
+  justify-content: center;
 }
 
 main {
@@ -52,12 +52,15 @@ footer {
 .banner-text {
   font-family: 'Josefin Sans', 'Helvetica Neue', arial, sans-serif;
   font-weight: 700;
+  font-size: 15rem;
+  /* Thanks Safari */
+  font-size: max(6rem, min(30vw, 15rem));
   font-size: clamp(6rem, 30vw, 15rem);
   line-height: 1;
 }
 
 small {
-  font-size: 0.88rem;
+  font-size: 0.77rem;
 }
 
 a {
