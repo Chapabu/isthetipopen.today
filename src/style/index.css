@@ -5,18 +5,77 @@ body {
   padding: 0;
   margin: 0;
   background: #fafafa;
-  font-family: "Helvetica Neue", arial, sans-serif;
-  font-weight: 400;
+  font-family: 'Raleway', 'Helvetica Neue', arial, sans-serif;
+  font-weight: 300;
   color: #444;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  font-size: 1.125rem;
 }
 
 .app {
-  min-height: 100vh;
-  max-width: 65rem;
-  margin: 0 auto;
-  padding: 0 1rem;
   display: grid;
-  grid-template-rows: auto 1fr auto;
+  grid-template-rows: 1fr auto;
+  height: 100%;
+}
+
+.center {
+  display: flex;
+  flex-direction: column;
+  place-items: center;
+  place-content: center;
+}
+
+main {
+  padding: 1rem;
+}
+
+footer {
+  margin-top: 1rem;
+  padding: 1rem;
+  border-top: 1px solid #ccc;
+}
+
+.flow {
+  --flow-space: 1em;
+}
+
+.flow > * + * {
+  margin-top: var(--flow-space);
+}
+
+.wrapper {
+  max-width: 90rem;
+  margin: 0 auto;
+}
+
+.banner-text {
+  font-family: 'Josefin Sans', 'Helvetica Neue', arial, sans-serif;
+  font-weight: 700;
+  font-size: clamp(6rem, 30vw, 15rem);
+  line-height: 1;
+}
+
+small {
+  font-size: 0.88rem;
+}
+
+a {
+  color: #ef476f;
+  font-weight: 700;
+  transition: all ease-out 0.2s;
+  text-decoration-thickness: 0.1rem;
+  /* Need to specify the offset or Chrome won't change the thickness. */
+  text-underline-offset: 0.1rem;
+}
+
+a:hover,
+a:focus {
+  color: #118ab2;
+  text-underline-offset: 0.1rem;
+  text-decoration-thickness: 0.28rem;
+}
+
+a:focus {
+  outline: 1px solid currentColor;
 }
