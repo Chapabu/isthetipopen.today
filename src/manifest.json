@@ -10,6 +10,11 @@
     {
       "src": "/assets/icons/recycling-svgrepo-com.svg",
       "sizes": "192x192 512x512"
+    },
+    {
+      "src": "/assets/icons/recycling-svgrepo-com.png",
+      "type": "image/png",
+      "sizes": "350x350"
     }
   ]
 }

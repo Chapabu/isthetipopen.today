@@ -12,9 +12,7 @@ export const App: FunctionalComponent = () => {
   return (
     <div className="app">
       <main class="center flow">
-        {isSSR ? (
-          <Banner bannerText="Not sure." />
-        ) : (
+        {!isSSR && (
           <Fragment>
             <Banner bannerText={tipState.isOpenToday ? 'Yup' : 'Nope'} />
             {tipState.isOpenToday && (
@@ -23,13 +21,13 @@ export const App: FunctionalComponent = () => {
           </Fragment>
         )}
         <p>
-          You can find out more about Maresfield tip{' '}
+          You can find out more about Maresfield tip on{' '}
           <a
             href="https://www.eastsussex.gov.uk/environment/rubbishandrecycling/recyclingsites/escc-maresfieldhwrs/"
             target="_blank"
             rel="noreferrer"
           >
-            here
+            the ESCC website
           </a>
           , but be careful; it&apos;s a wild ride!
         </p>
